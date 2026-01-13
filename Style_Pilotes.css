@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    font-family: "Zalando Sans Expanded", sans-serif;
+  	font-optical-sizing: auto;
+	font-size: 17px;
+  	font-style: normal;
+}
+
+.navbare{
+    margin-top: 3vh;
+    width: 92%;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 4vw;
+    padding: 20px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+
+}
+
+.navbare .logo_index{
+    width: 80px;
+}
+
+.navbare ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.navbare ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    padding:0 15px;
+    color: #F22248;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+.navbare ul li a:hover{
+    color: #F2EBDC;
+}
+
+.scroll-active{
+	border-radius: 4vh;
+	background-color: rgba(255, 255, 255, 0.089);
+	backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(240, 255, 255, 0.184);
+    border-left: 1px solid rgba(240, 255, 255, 0.184);
+    box-shadow: 3px, 3px, 3px rgba(0,0,0,0.089);
+}
+
+.scroll-active ul li a{
+	color: #F22248;
+}
+
+
+/* Mise en page body */
+/* MIse en page top */
+
+.grand_titre{
+    margin-top: 30vh;
+    padding: 0 20% 0 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "yerk", sans-serif;
+	font-weight: 400;
+    font-size: 40px;
+	font-style: italic;
+    color: #F22248;
+}
+
+.casque{
+    width: 5%;
+}
+
+.contenu_casque{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Texte d'introduction */
+.div_du_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.texte_intro{
+    font-weight: 500;
+    text-align: justify;
+    width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #F22248;
+
+}
+
+/* Mise en page mclaren */
+
+@keyframes spin {
+    from {translate: -101%;}
+    to {translate: 0;}
+}
+
+.case_mclaren{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow-x: auto;
+}
+
+.case_mclaren::-webkit-scrollbar{
+    display: none;
+}
+
+.bloc_mclaren{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 88rem;
+    margin-right: 1rem;
+    animation: spin 20s infinite linear;
+}
+
+.bloc_mclaren2{
+    display: flex;
+    margin-top: 2rem;
+    animation: spin 20s infinite linear;
+}
+
+
+.contenu_img_mclaren{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Mise en page droite */
+
+@keyframes spin {
+    from {translate: -101%;}
+    to {translate: 0;}
+}
+
+.case_droite{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow-x: auto;
+}
+
+.case_droite::-webkit-scrollbar{
+    display: none;
+}
+
+.bloc_droite{
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 88rem;
+    margin-right: 1rem;
+    animation: spin 20s infinite linear;
+    animation-direction: reverse;
+}
+
+.bloc_droite2{
+    display: flex;
+    margin-top: 4rem;
+    animation: spin 20s infinite linear;
+    animation-direction: reverse;
+}
+
+
+.contenu_img_droite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Mise en page images */
+
+.image1{
+    border-radius: 1.5vw;
+    height: 20rem;
+}
+
+.image2{
+    border-radius: 1.5vw;
+    height: 20rem;
+}
+
+.image3{
+    border-radius: 1.5vw;
+    height: 20rem;
+}
+
+/* Mise en page gauche */
+
+@keyframes spin {
+    from {translate: -101%;}
+    to {translate: 0;}
+}
+
+.case_gauche{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow-x: auto;
+}
+
+.case_gauche::-webkit-scrollbar{
+    display: none;
+}
+
+.bloc_gauche{
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 88rem;
+    margin-right: 1rem;
+    animation: spin 20s infinite linear;
+}
+
+.bloc_gauche2{
+    display: flex;
+    margin-top: 4rem;
+    animation: spin 20s infinite linear;
+}
+
+
+.contenu_img_gauche{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/* Mise en page footer*/
+
+.footer{
+    flex-shrink: 0;
+    margin-top: 3vw;
+    border-top: 1px solid rgba(69, 69, 69, 0.271);
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: flex-start;
+    font-size: 5px;
+    padding: 30px 0 100px;
+}
+
+.e_footer{
+    font-family: "Inter", sans-serif;
+  	font-optical-sizing: auto;
+    font-weight: 700;
+  	font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.m_footer{
+    font-family: "Inter", sans-serif;
+  	font-optical-sizing: auto;
+    font-weight: 900;
+  	font-style: normal;
+    font-size: 14px;
+}
+
+.tutos{
+    font-family: "Inter", sans-serif;
+  	font-optical-sizing: auto;
+    font-weight: 700;
+  	font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.tutos:hover{
+    color: #F2EBDC;
+}
+
+.bloc_présentation,
+.bloc_sources{
+    width: 22%;
+    margin: 0 30px;
+}
+.bloc_adresses{
+    width: 22%;
+    margin: 13px 30px;
+
+}
+
+.nom_footer{
+    height: 1;
+    margin-top: -135px;
+    font-family: "Zalando Sans Expanded", sans-serif;
+  	font-optical-sizing: auto;
+    font-weight: 700;
+  	font-style: normal;
+    text-decoration: none;
+    font-size: 268px;
+    color: #D9D8D7;
+}
